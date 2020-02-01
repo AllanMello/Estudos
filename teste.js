@@ -22,6 +22,7 @@ var question = function(q) {
   var answer;
   while (contador < palavraEscolhida.length) {
    // process.stdout.write("\033c");
+   console.log('\033[2J\033[0f')
     console.log(palavraResposta);
     answer = await question("Digite uma letra e pressione <ENTER>: ");
     for (var i = 0; i < palavraEscolhida.length; i++) {
