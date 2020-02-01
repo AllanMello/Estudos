@@ -1,1 +1,1 @@
-Projeto de estudos para construir um jogo da forma
+Projeto de estudos para construir um jogo da forca

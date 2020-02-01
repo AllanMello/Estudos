@@ -36,3 +36,4 @@ var question = function(q) {
   console.log("Parabéns! Você acertou.");
   process.exit(0);
 })();
+
