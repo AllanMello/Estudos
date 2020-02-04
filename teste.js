@@ -3,16 +3,21 @@ const readline = require("readline");
 let biblioteca = ['detetive', 'cachorro', 'carro', 'computador', 'porta',
 'tinta', 'hipopotamo', 'caderno', 'televisao', 'monitor']   
 
-//Função para sortar os indices do array
+//Opção 1 para sortear os indices do array
+
 /*let sortear = function() { for (let i = 0; i < biblioteca.length; i++) {
   const j = Math.floor(Math.random() * (i + 1));
   [biblioteca[i], biblioteca[j]] = [biblioteca[j], biblioteca[i]];
  }
 }*/
+//opção 2 para sortear os indices do array
+
+/*let qtde = biblioteca.length-1;
+let pos = Math.round(Math.random()*qtde);
+let palavra = biblioteca[pos];*/
 
 
-let sortear = 'fannykita'
-
+let sortear = 'casa'
 let palavraEscolhida = sortear.split("");
 let palavraResposta = [];
 let contador = 0;
@@ -47,16 +52,18 @@ var question = function(q) {
   }
 
 //let letrasDigitadas = [cl] Consegui extrair esse history a partir dessa variavel cl
-let letrasDigitadas = [cl.history]
-/*let conferir = function() {
-  if (  letrasDigitadas ==  ) {
+let letrasDigitadas = cl.history
+
+//função para indentificar se ele está digitando alguma letra repetida
+let conferir = [palavraEscolhida]
+let conferindo = function() {
+  if (conferir == cl.history) {
     console.log('Letra já digitada, tente novamente')
   }
-} */
-
+}
 
   console.log(`Suas letras digitadas foram: ${letrasDigitadas}`)
   console.log("Parabéns! Você acertou.");
-  console.log(`A palavra era: ${palavraResposta}`)
+  console.log(`A palavra era: ${sortear}`)
   process.exit(0);
 })();
