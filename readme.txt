@@ -1,1 +1,0 @@
-Projeto de estudos para construir um jogo da forca

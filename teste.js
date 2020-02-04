@@ -1,7 +1,19 @@
 const readline = require("readline");
 
-let palavra = "casa";
-let palavraEscolhida = palavra.split("");
+let biblioteca = ['detetive', 'cachorro', 'carro', 'computador', 'porta',
+'tinta', 'hipopotamo', 'caderno', 'televisao', 'monitor']   
+
+//Função para sortar os indices do array
+/*let sortear = function() { for (let i = 0; i < biblioteca.length; i++) {
+  const j = Math.floor(Math.random() * (i + 1));
+  [biblioteca[i], biblioteca[j]] = [biblioteca[j], biblioteca[i]];
+ }
+}*/
+
+
+let sortear = 'fannykita'
+
+let palavraEscolhida = sortear.split("");
 let palavraResposta = [];
 let contador = 0;
 
@@ -31,8 +43,20 @@ var question = function(q) {
         contador++;
       }
     }
-    console.log(palavraResposta);
+     console.log(palavraResposta);
   }
+
+//let letrasDigitadas = [cl] Consegui extrair esse history a partir dessa variavel cl
+let letrasDigitadas = [cl.history]
+/*let conferir = function() {
+  if (  letrasDigitadas ==  ) {
+    console.log('Letra já digitada, tente novamente')
+  }
+} */
+
+
+  console.log(`Suas letras digitadas foram: ${letrasDigitadas}`)
   console.log("Parabéns! Você acertou.");
+  console.log(`A palavra era: ${palavraResposta}`)
   process.exit(0);
 })();
