@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JogoDaForca</title>
+        <style>
+            #boasVindas{
+                text-align: center;
+                font-size: 40px;
+                background-color:red;
+            }
+            #forca{
+                position: absolute;
+                top: 300px;
+                left: 60px;
+            }
+            .letra{
+                width: 30px;
+                font-size: 30px;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 5px;
+                display: none;
+            }
+            .letraj{
+                width: 30px;
+                font-size: 30px;
+                text-transform: uppercase;
+                text-align: center;
+                margin: 5px;
+            }
+            .dvdisplay{
+                display: block;
+                text-align-last: center;
+            }
+            #dvForca{
+                left: 150px;
+            }
+            #cabeca{
+                position: absolute;
+                height: 90px;
+                width: 95px;
+                top:328px;
+                left: 270px;
+            }
+            #bracoE{
+                position:absolute;
+                height: 40px;
+                width: 70px;
+                top: 415px;
+                left: 241px;
+            }
+            #corpo{
+                position: absolute;
+                top: 417px;
+                left: 311px;
+            }
+            #bracoD{
+                position: absolute;
+                height: 40px;
+                width: 65px;
+                top: 415px;
+                left: 319px;
+            }
+            #pernaE{
+                position: absolute;
+                top: 503px;
+                left: 248px;
+            }
+            #pernaD{
+                position: absolute;
+                top: 504px;
+                left: 314px;
+            }
+        </style>
+    </script>
+</head>
+<body>
+
+    <marquee><h1 id="boasVindas">Bem vindo ao Jogo da forca</h1></marquee>
+    <div id="dvmenu" class="dvdisplay">
+        <button onclick="inicia()">Nova palavra</button>
+    </div>
+    <div id="dvplavra" class="dvdisplay">
+        <input type="text" id="letra0" class="letra" maxlength="1">
+        <input type="text" id="letra1" class="letra" maxlength="1">
+        <input type="text" id="letra2" class="letra" maxlength="1">
+        <input type="text" id="letra3" class="letra" maxlength="1">
+        <input type="text" id="letra4" class="letra" maxlength="1">
+        <input type="text" id="letra5" class="letra" maxlength="1">
+        <input type="text" id="letra6" class="letra" maxlength="1">
+        <input type="text" id="letra7" class="letra" maxlength="1">
+        <input type="text" id="letra8" class="letra" maxlength="1">
+        <input type="text" id="letra9" class="letra" maxlength="1">
+        <input type="text" id="letra10" class="letra" maxlength="1">
+        <input type="text" id="letra11" class="letra" maxlength="1">
+        <input type="text" id="letra12" class="letra" maxlength="1">
+        <input type="text" id="letra13" class="letra" maxlength="1">
+        <input type="text" id="letra14" class="letra" maxlength="1">
+        <input type="text" id="letra15" class="letra" maxlength="1">
+        <input type="text" id="letra16" class="letra" maxlength="1">
+        <input type="text" id="letra17" class="letra" maxlength="1">
+        <input type="text" id="letra18" class="letra" maxlength="1">
+    </div>
+    <div id="dvjogador" class="dvdisplay">
+        <div id="controlesJogador">
+            <input type="text" id="letraJ" class="letraJ" maxlength="1">
+            <button onclick="jogar()">jogar</button>
+            <button onclick="dica()">Dica</button>
+            <div id="dvmsg"></div>
+            <div id="dvletrasdigitadas">Letras Digitadas:</div>
+        </div>
+        <img id="forca" src="imagens/forca2.png">
+        <div id="dvForca">
+            <img id="cabeca" src="imagens/cabeca.png">
+            <img id="corpo" src="imagens/corpo.png">
+            <img id="bracoE" src="imagens/bracoE.png"> 
+            <img id="bracoD" src="imagens/bracoD.png">
+            <img id="pernaE" src="imagens/pernaE.png">
+            <img id="pernaD" src="imagens/pernaD.png">
+        </div> 
+    </div>
+    <script type="text/javascript" src="codigo.js"></script>
+</body>
+</html>
